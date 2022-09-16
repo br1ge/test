@@ -11,7 +11,7 @@ export class ServService {
   public message$: BehaviorSubject<string> = new BehaviorSubject('');
   constructor() {}
 
-  socket = io('http://192.168.95.93:3000');
+  socket = io('http://localhost:3000');
 
   public sendMessage(message: String) {
     message = message.trim();
